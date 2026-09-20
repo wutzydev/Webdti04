@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bake House</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #e6e4e0;
+            /* สีพื้นหลังรอบนอก */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            /* สีพื้นหลังตรงกลาง */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 1. HERO */
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('./images/r1.png');
+            background-size: cover;
+            background-position: center;
+            height: 550px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        .logo img {
+            width: 90px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        .hero-text {
+            padding-left: 40px;
+            padding-top: 60px;
+        }
+
+        .small-text {
+            color: #e0aa72;
+            font-size: 16px;
+        }
+
+        .hero-text h1 {
+            font-family: 'Lobster', cursive;
+            color: white;
+            font-size: 55px;
+            font-weight: normal;
+            line-height: 1.1;
+            margin: 10px 0 25px 0;
+        }
+
+        .btn-shop {
+            background-color: #a83d21;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-right: 15px;
+        }
+
+        .btn-learn {
+            color: #e0aa72;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* 2. TOP PRODUCTS */
+        .products {
+            padding: 50px 40px;
+        }
+
+        .title {
+            font-family: 'Lobster', cursive;
+            font-size: 40px;
+            text-align: center;
+            font-weight: normal;
+            margin-bottom: 35px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+
+        .card img {
+            width: 100%;
+            display: block;
+            border-radius: 6px;
+        }
+
+        /* 3. PROMO */
+        .promo {
+            background-image: url('./images/c7.png');
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+        }
+
+        /* 4. EXPLORE MORE */
+        .explore {
+            padding: 50px 40px;
+            text-align: center;
+        }
+
+        .explore-menu {
+            margin-bottom: 35px;
+            border-bottom: 1px solid #ddd;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .explore-menu span {
+            margin: 0 12px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .explore-menu span.active {
+            color: #111;
+            border-bottom: 2px solid #a83d21;
+            padding-bottom: 11px;
+        }
+
+        .explore img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        /* 5. ABOUT US */
+        .about {
+            background-image: url('./images/c8.png');
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+        }
+
+        /* 6. FEATURED TREATS */
+        .featured {
+            padding: 50px 40px;
+        }
+
+        .featured-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .featured-text {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12px;
+            font-weight: 600;
+            padding: 0 5px;
+            font-size: 15px;
+        }
+
+        /* 7. FOOTER */
+        .footer {
+
+            background-image: url('./images/c0.png');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- 1. HERO -->
+        <div class="hero">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./images/Logo6.png" alt="Keithston">
+                </div>
+                <div class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Services</a>
+                </div>
+            </div>
+            <div class="hero-text">
+                <p class="small-text">Delicious Cafe</p>
+                <h1>Sweet Treats,<br>Perfect Eats</h1>
+                <a href="#" class="btn-shop">Shop Now</a>
+                <a href="#" class="btn-learn">Learn More</a>
+            </div>
+        </div>
+
+        <!-- 2. TOP PRODUCTS -->
+        <div class="products">
+            <h2 class="title">Top Products</h2>
+            <div class="grid-3">
+
+                <div class="card"><img src="./images/c1.png" alt="Product"></div>
+                <div class="card"><img src="./images/c2.png" alt="Product"></div>
+                <div class="card"><img src="./images/c3.png" alt="Product"></div>
+                <div class="card"><img src="./images/c4.png" alt="Product"></div>
+                <div class="card"><img src="./images/c5.png" alt="Product"></div>
+                <div class="card"><img src="./images/c6.png" alt="Product"></div>
+            </div>
+        </div>
+
+        <!-- 3. PROMO -->
+        <div class="promo"></div>
+
+        <!-- 4. EXPLORE MORE -->
+        <div class="explore">
+            <h2 class="title">Explore More</h2>
+            <div class="explore-menu">
+                <span class="active">Cake</span>
+                <span>Muffins</span>
+                <span>Croissant</span>
+                <span>Bread</span>
+                <span>Tart</span>
+                <span>Favorite</span>
+            </div>
+            <div class="grid-3">
+                <img src="./images/r2.png" alt="Cake">
+                <img src="./images/r3.png" alt="Cake">
+                <img src="./images/r4.png" alt="Cake">
+                <img src="./images/r7.png" alt="Cake">
+                <img src="./images/r5.png" alt="Cake">
+                <img src="./images/r6.png" alt="Cake">
+            </div>
+        </div>
+
+        <!-- 5. ABOUT -->
+        <div class="about"></div>
+
+        <!-- 6. FEATURED TREATS -->
+        <div class="featured">
+            <h2 class="title">Featured Treats</h2>
+            <div class="grid-3">
+                <div class="featured-item">
+                    <img src="./images/r0.png" alt="Puff Pastry">
+                    <div class="featured-text">
+                        <span>Puff Pastry</span>
+                        <span>8 Baht</span>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <img src="./images/r8.png" alt="Doughnuts">
+                    <div class="featured-text">
+                        <span>Doughnuts</span>
+                        <span>8 Baht</span>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <img src="./images/r9.png" alt="Brownies">
+                    <div class="featured-text">
+                        <span>Brownies</span>
+                        <span>8 Baht</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. FOOTER -->
+        <div class="footer">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
